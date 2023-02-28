@@ -38,7 +38,7 @@ const APropos = () => {
             <img
                 className="apropos__img"
                 src={`${apropos}`}
-                alt="illustration"
+                alt="illustration, photo de montagne"
             />
             <MenuDeroulant
                 menu={`${menu}`}

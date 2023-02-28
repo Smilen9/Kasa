@@ -51,7 +51,7 @@ const FicheLogement = () => {
         }
     }
 
-    //affichage en liste de la sous-array de l'api
+    //affichage en liste des tag dans l'api
     function itemList(type) {
         return (
             <>

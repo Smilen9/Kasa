@@ -123,7 +123,7 @@ body {
     height: 209px;
     justify-content: center;
     left: 0;
-    margin: auto;
+    margin: 0 100px ;
     max-width: 1240px;
     position: relative;
     right: 0
@@ -358,7 +358,7 @@ body {
     background-color: #f6f6f6;
     border-radius: 5px;
     color: #ff6060;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     margin: auto;
     padding: 30px 10px 10px

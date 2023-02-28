@@ -8,7 +8,7 @@ const MenuDeroulant = ({ menu, header, paragraphe, titre, texte }) => {
         height: "50px",
         width: "50px",
         transform: state ? "rotate(90deg)" : "rotate(-90deg)",
-        transition: "transform 0.4s ease-in-out",
+        transition: "transform 0.5s ease-in-out",
     };
 
     const handleClick = () => {

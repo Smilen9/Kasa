@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; // Stocker et mettre a jour les données d'un composant
 import Arrow from "./Arrow";
 
 const slideStyles = {
@@ -14,7 +14,7 @@ const sliderStyles = {
 };
 
 const Carousel = ({ slides }) => {
-
+//Emplacement des nombre sur photo
     const slideNumber = {
         position: "absolute",
         color: "white",
@@ -48,22 +48,24 @@ const Carousel = ({ slides }) => {
     };
 
     //diapositive 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    //Image suivante
+    const [currentIndex, setCurrentIndex] = useState(0); // useState prend un variable d'état et une fonction de MaJ
     const goToPrevious = () => {
-        const isFirstSlide = currentIndex === 0; //currentIndex 0 par defaut
-        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1; // On décrémente de 1 si on clique sur precedent
-        setCurrentIndex(newIndex);
+        const isFirstSlide = currentIndex === 0; //Verifie si l'image actuelle est la 1.
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1; //Si l'image actuelle est 1 alors la précédente est la derniere
+        setCurrentIndex(newIndex);//MaJ valeur currentIndex                  //Si l'image n'est pas la premiere on recalcule l'index en enlever 1 a l'image en cour          
     };
+    //Image precedente
     const goToNext = () => {
-        const isLastSlide = currentIndex === slides.length - 1;
-        const newIndex = isLastSlide ? 0 : currentIndex + 1; // On incrémente de 1 si on clique sur suivant
+        const isLastSlide = currentIndex === slides.length - 1;//
+        const newIndex = isLastSlide ? 0 : currentIndex + 1; // 
         setCurrentIndex(newIndex);
     };
 
     const slideStylesWidthBackground = {
-        ...slideStyles,
+        ...slideStyles,//On copie toutes les props de l'objet 
         backgroundImage: `url(${slides[currentIndex]})`, // affichage de l'image
-    };
+    };                                              //Utilisation de l'url de l'image dans le tableau slides à la valeur currentIndex
 
     //
     return (                                
@@ -77,7 +79,7 @@ const Carousel = ({ slides }) => {
                 </div>
             </div>
             <div style={slideNumber}>
-                {currentIndex + 1} / {slides.length}
+                {currentIndex + 1} / {slides.length} 
             </div>
             <div
                 className="img__height"

@@ -1,6 +1,5 @@
 import React from "react";
 import Error from "./Error";
-import Layout from "../component/Layout";
 import Home from "./Home";
 import APropos from "./APropos";
 import Logement from "./Logement";
@@ -10,7 +9,7 @@ const Router = () => {
     return (
         <div>
             <Routes>
-                <Route element={<Layout />}>
+                <Route>
                     <Route index element={<Home />} />
                     <Route path="/apropos" element={<APropos />} />
                     <Route path="/" element={<Home />} />
