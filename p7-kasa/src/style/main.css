@@ -177,7 +177,7 @@ body {
     display: flex;
     -webkit-filter: none;
     filter: none;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 500;
     position: absolute;
     z-index: 1
@@ -226,6 +226,48 @@ body {
     color: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
     height: 340px;
     width: 340px
+}
+
+@media (max-width : 695px) {
+    .Body__header h1{
+        font-size:xx-large;
+    }
+    .large {
+        opacity: 0;
+    }
+
+    .small {
+        opacity: 1;
+        width: 70%;
+    }
+
+}
+
+@media (max-width : 425px) {
+    .Body__header {
+        height: auto;
+        margin-top: 0;
+    }
+
+    .Body__header h1{
+        font-size: larger;
+    }
+
+    .Body__CarteLogement {
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .Body__CarteLogement ul {
+        padding: 0px;
+        gap: 20px;
+    }
+}
+
+@media (max-width : 350px) {
+    .carte{
+        width: 300px;
+    }
 }
 
 @media (max-width: 400px) {

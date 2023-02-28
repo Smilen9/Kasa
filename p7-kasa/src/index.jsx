@@ -5,7 +5,8 @@ import APropos from "./pages/APropos";
 import Logement from "./pages/Logement";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
+import mainCss from './style/main.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals'

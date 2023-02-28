@@ -26,7 +26,7 @@
 
 .Body__header h1 {
     font-weight: 500;
-    font-size: 47px;
+    font-size: 45px;
     color: #FFFFFF;
     z-index: 1;
     display: flex;
@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-width : 350px) {
+@media (min-width : 350px) {
     .carte{
         width: 300px;
     }
