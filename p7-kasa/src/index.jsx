@@ -1,6 +1,5 @@
 import React from "react";
 import Error from "./pages/Error";
-//import Layout from "../component/Layout";
 import Home from "./pages/Home";
 import APropos from "./pages/APropos";
 import Logement from "./pages/Logement";
