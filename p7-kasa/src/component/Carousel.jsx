@@ -24,6 +24,8 @@ const Carousel = ({ slides }) => {
         textAlign: "center",
         opacity: slides.length <= 1 ? "0" : "1",
     };
+
+    //Si 1 photo ou moins, fleche opacité 0
 //Fleche de gauche/ image precedente
     const arrowprev = {
         left: "0px",
