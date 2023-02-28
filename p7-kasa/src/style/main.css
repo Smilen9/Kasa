@@ -65,18 +65,18 @@ body {
 }
 
 .header {
-    align-items: center;
     display: flex;
-    flex-direction: row;
-    height: 68px;
     justify-content: space-between;
-    margin: 30px auto 0;
-    max-width: 1240px
+    max-width: 1240px;
+    height: 68px;
+    flex-direction: row;
+    margin:40px 100px;
+    align-items: center;
 }
 
 .header svg {
     margin: 20px 0 30px 20px;
-    width: 210px
+    width: 205px
 }
 
 .header ul {
@@ -98,14 +98,19 @@ body {
     text-decoration: underline
 }
 
-@media (max-width: 400px) {
+@media (max-width:768px) and (min-width:427px){
+    .header {
+        margin: 40px 20px;
+    }     
+}
+
+@media (max-width: 426px) {
     .header {
         margin:0
     }
 
     .header svg {
-        padding-left: 20px;
-        width: 145px
+        width: 110px
     }
 }
 
