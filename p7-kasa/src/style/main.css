@@ -9,10 +9,6 @@ body {
     margin: 0;
 }
 
-#root {
-    max-width: 1440px
-}
-
 #root,.PageIntrouvable {
     display: flex;
     flex-direction: column;
@@ -67,10 +63,10 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1240px;
+    max-width: 1440px;
     height: 68px;
     flex-direction: row;
-    margin:40px 100px;
+    margin:40px 120px;
     align-items: center;
 }
 
@@ -85,8 +81,8 @@ body {
 }
 
 .header ul li {
+    font-size: 20px;
     display: inline-block;
-    padding-right: 20px
 }
 
 .header a {
@@ -98,10 +94,13 @@ body {
     text-decoration: underline
 }
 
-@media (max-width:768px) and (min-width:427px){
+@media (max-width:768px) and (min-width:426px){
     .header {
         margin: 40px 20px;
-    }     
+    }
+    .header ul li {
+        font-size: 20px;
+    }   
 }
 
 @media (max-width: 426px) {
@@ -110,8 +109,12 @@ body {
     }
 
     .header svg {
-        width: 110px
+        width: 105px
     }
+
+    .header ul li {
+        font-size: 16px;
+    }   
 }
 
 .Footer {
@@ -123,8 +126,6 @@ body {
     height: 209px;
     justify-content: center;
     left: 0;
-    margin: 0 100px ;
-    max-width: 1240px;
     position: relative;
     right: 0
 }

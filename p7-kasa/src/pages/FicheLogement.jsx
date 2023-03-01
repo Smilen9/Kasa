@@ -15,7 +15,7 @@ let paragraphe = `logement__menus__desc`;
 //recherche de l'index dans l'array de l'api
 const FicheLogement = () => {
     function useLogement() {
-        let { id } = useParams();
+        let { id } = useParams(); //On extrait l'id de l'url
         for (let i = 0; i < logements.length; ) //On cherche le nombre de composant qu'il y a dans logementJSON
             if (id === logements[i].id) {
                 return (n = i);
